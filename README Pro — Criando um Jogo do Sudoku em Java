@@ -1,0 +1,94 @@
+# Criando um Jogo do Sudoku em Java
+
+Este projeto implementa a lógica básica de um jogo de Sudoku em Java, executado via terminal. A classe `SudokuGame.java` oferece uma solução utilizando *backtracking* para resolver tabuleiros de 9×9, representando células vazias com `0`.
+
+---
+
+##  Funcionalidades Atuais
+
+- Representação do tabuleiro como uma matriz `int[9][9]`.
+- Células vazias sinalizadas com `0`.
+- **Validação de jogada**: impede inserir um número que viole as regras de Sudoku (linhas, colunas ou bloco 3×3).
+- **Solução automática**: algoritmo de *backtracking* preenche o tabuleiro recursivamente.
+- Impressão do tabuleiro no terminal, formatado de forma simples.
+
+(Inspirado em exemplos semelhantes no GitHub) :contentReference[oaicite:0]{index=0}
+
+---
+
+##  Estrutura Sugerida do Projeto
+
+Criando-um-Jogo-do-Sudoku-em-Java/
+├── src/
+│ └── main/java/
+│ └── SudokuGame.java
+├── README.md
+└── (Opcional) LICENSE
+
+#Yaml
+
+
+---
+
+##  Como Executar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/meloalexandev/Criando-um-Jogo-do-Sudoku-em-Java.git
+#Compile:
+javac SudokuGame.java
+
+#Execute:
+java SudokuGame
+
+#Sugestões de evolução
+
+
+| Área                | Melhorias recomendadas                                                                            |
+| ------------------- | ------------------------------------------------------------------------------------------------- |
+| Arquitetura         | Refatorar: isolar lógica (tabuleiro, validação) em classes como `Board`, `Solver`, `GameManager`. |
+| Entradas do usuário | Implementar leitura de dados interativos (ex: tabuleiros customizados ou jogadas manuais).        |
+| Interface           | Criar interface gráfica com Swing ou JavaFX. ([GitHub][1])                                        |
+| Geração de puzzles  | Gerar tabuleiros com dificuldades variáveis e garantir solução única.                             |
+| Testes              | Adicionar testes unitários (JUnit) para validação de regras e solução.                            |
+| Qualidade           | Adotar formatação automatizada (e.g., Spotless), análise estática (Checkstyle, SonarLint).        |
+| Documentação        | Escrever JavaDocs e melhorar o README com exemplos de uso, screenshots e roadmap.                 |
+| CI/CD               | Integrar GitHub Actions para build, test e formatação automatizada.                               |
+
+[1]: https://github.com/inforpop/Criando-um-Jogo-do-Sudoku-em-Java/blob/main/Criando%20um%20Jogo%20do%20Sudoku%20em%20Java?utm_source=chatgpt.com "Criando um Jogo do Sudoku em Java - GitHub"
+
+
+Roadmap Prioritário
+
+ Refatorar lógica em classes bem definidas (POO: Board, Solver, Renderer).
+
+ Permitir entrada de tabuleiro via console ou arquivo.
+
+ Implementar interface gráfica com Swing/JavaFX.
+
+ Adicionar testes com JUnit.
+
+ Configurar integração contínua com GitHub Actions.
+
+ Adicionar licença (e.g., MIT, Apache 2.0).
+
+Contribuição
+
+Contribuições são bem-vindas! Protocolo recomendado:
+
+Faça um fork do repositório.
+
+Crie sua branch: git checkout -b feature/nome-da-feature.
+
+Commit com mensagem clara: feat: adicionar interface gráfica.
+
+Abra um Pull Request e siga as diretrizes do repositório (preferencialmente usando Conventional Commits).
+
+Autor
+
+Alexandre Mata Melo
+GitHub: @meloalexandev
+
+Licença
+
+Este projeto ainda não define uma licença. Considere adicionar uma licença permissiva (ex: MIT) criando o arquivo LICENSE.
